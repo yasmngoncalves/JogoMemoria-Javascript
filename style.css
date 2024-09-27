@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: lightgoldenrodyellow;
+}
+
+h1 {
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: #2d89e5;
+}
+
+a {
+    text-decoration: none;
+    color: #2d89e5;
+}
+
+/*estilo dos cards*/
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+    margin-top: 20px;
+    background: lightblue;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.hidden {
+    display: none; 
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #2d89e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    border-radius: 8px;
+    position: relative;
+}
+
+.card.flipped {
+    background-color: #e55c2d;
+}
+
+.card.matched {
+    background-color: #3ae57d;
+    cursor: default;
+}
+
+/*botões*/
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    background-color: lightblue;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #2d89e5;
+}
+
